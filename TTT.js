@@ -5,6 +5,7 @@ let resetBtn = document.querySelector("#reset");
 let MsgContainer = document.querySelector(".msg");
 let Result = document.querySelector(".DispResult");
 let Theme = document.querySelector("#Mode");
+let Note = document.querySelector(".note");
 let count = 0;
 
 const winPatterns = [ //These are the patterns when a player can win 
@@ -100,6 +101,7 @@ function lightMode() {
     Theme.style.backgroundColor = "rgb(95, 104, 99)";
     Theme.style.color = "#F0F7F4";
     Body.style.backgroundColor = "#E8E8E8"
+    Note.style.color = "black";
 }
 
 function darkMode() {
@@ -121,6 +123,7 @@ function darkMode() {
     Theme.style.backgroundColor = "#136F63";
     Theme.style.color = "aliceblue";
     Body.style.backgroundColor = "#032B43"
+    Note.style.color = "white";
 }
 darkMode();
 Theme.addEventListener("click", () => {

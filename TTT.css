@@ -65,6 +65,11 @@ body {
     cursor: pointer;
 }
 
+.note{
+    text-align: center;
+    font-weight: bold;
+}
+
 
 .right-content{
     display: flex;
