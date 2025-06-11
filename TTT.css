@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #032B43;
+    text-align: center;
+}
+
+#headTitle {
+    text-align: center;
+    font-size: 350%;
+    color: #ddedf5;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    text-shadow:
+    0 0 15px rgb(0, 208, 255),
+    0 0 25px rgb(0, 208, 255);
+}
+
+.container {
+    height: 70vh;
+    /*70% viewport height = 70% of visible screen no matter how much content is there*/
+    display: flex;
+    /*To make all boxes in one line*/
+    justify-content: center;
+    /*TTT વાડા div ના center માં લાવા માટે */
+    align-items: center;
+    flex-direction: row;
+}
+
+.TTT {
+    /*Div, in which all the boxes are there*/
+    height: 60vmin;
+    /*60% of the viewport */
+    width: 60vmin;
+    display: flex;
+    /*To make all boxes in one line*/
+    flex-wrap: wrap;
+    /*To make align, જો જગ્યા નઇ હોય તો નીચે આઈ જસે box */
+    justify-content: center;
+    /*TTT વાડા div ના center માં લાવા માટે */
+    align-items: center;
+    flex-direction: column;
+    margin-right: 100px;
+    gap: 1vmin;
+}
+
+.r {
+    display: flex;
+    flex-direction: row;
+    gap: 1vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 450%;
+    color: #FFBA08;
+    border-radius: 10px;
+    border: none;
+    /* box-shadow: 0 0 1rem rgb(63, 136, 197, 0.5); */
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+
+.right-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.DispResult {
+    height: 15vh;
+    width: 20vw;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3F88C5;
+    border: 5px solid #136F63;
+    border-radius: 20px;
+    margin-bottom: 4%;
+}
+.msg {
+    width: max-content;
+    font-size: 90%;
+    padding: 1% 6%;
+    text-align: center;
+    color: #D00000;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1vmin;
+}
+
+#reset,
+#Mode {
+    width: 10vw;
+    font-size: medium;
+    color: aliceblue;
+    border-radius: 40px;
+    border: none;
+    background-color: #136F63;
+    padding: 2% 3%;
+    cursor: pointer;
+}
+
+
+
+#res {
+    margin-top: 3%;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 1275px){
+    .btns{
+        flex-direction: column;
+    }
+    #reset,
+    #Mode {
+        width: 100%;
+        font-size: 120%;
+    }
+}
+@media only screen and (max-width: 960px){
+
+    .container{
+        flex-direction: column;
+        height: max-content;
+        margin-bottom: 3%;
+    }
+    .TTT{
+        margin-right: 0;
+    }
+    .DispResult{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 960px){
+    main{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* @media only screen and (max-width: 860px){
+    main{
+        height: 80vh;
+    }
+} */
+@media only screen and (max-width: 650px){
+    #headTitle{
+        margin-bottom: 10%;
+    }
+    .container{
+        width: 90vw;
+    }
+    .TTT{
+        width: 90%;
+        height: max-content;
+        margin-bottom: 10%;
+    }
+    .box{
+        height: 25vmin;
+        width: 25vmin;
+    }
+
+    .right-content{
+        width: 85%;
+    }
+    .DispResult{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    main{
+        height: 80vh;
+        justify-content: space-evenly;
+    }
+    #headTitle{
+        font-size: 300%;
+    }
+}
